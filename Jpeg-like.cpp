@@ -2813,7 +2813,7 @@ int main(){
 
     printf("Input complete filename: ");
     gets(buf);
-    sprintf(in, """%s""", buf); // ¬°Á×§K¦³ªÅ¥Õ,¥[¤JÂù¤Þ¸¹
+    sprintf(in, """%s""", buf); // To prevent space ,add double quotation marks
 
     input =fopen(in,"rb");
     if(input==NULL){
@@ -2965,10 +2965,10 @@ int main(){
 
         file.open("Lena_QF90.data",ios::out|ios::binary);
 
-        if(!file)     //ÀË¬dÀÉ®×¬O§_¦¨¥\¶}±Ò
+        if(!file)     // check if the file open successfully
         {
             cerr << "Can't open file!\n";
-            exit(1);     //¦b¤£¥¿±`±¡§Î¤U¡A¤¤Â_µ{¦¡ªº°õ¦æ
+            exit(1);     // If there is something weirdï¼Œcancel the program
         }
 
         //file<<"\xFF\xD8";
@@ -3327,9 +3327,9 @@ cout<<"AC Decode Start"<<endl;
     unsigned char ucc = 0;
 
     vector<unsigned char> yo;
-    yo.assign(height,ucc);//°t¸m¤@­Ó row ªº¤j¤p
+    yo.assign(height,ucc);//set the size as big as a row
     vector< vector<unsigned char> > a_2D;
-    a_2D.assign(width,yo);//°t¸m2ºû
+    a_2D.assign(width,yo);//set two dimension
 
     for(int i = 0 ; i < height ; i++){
         for(int j = 0 ; j < width ; j++){
