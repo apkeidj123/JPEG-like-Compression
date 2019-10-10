@@ -33,9 +33,9 @@ int main(){
 
     /*
     vector<unsigned char> row1;
-    row1.assign(height,uc);//配置一個 row 的大小
+    row1.assign(height,uc);//set the size as big as a row
     vector< vector<unsigned char> > img1;
-    img1.assign(width,row1);//配置2維
+    img1.assign(width,row1);//set two dimension
 */
     int init_val=0;
     vector< vector<int> > pixel1;
