@@ -1,5 +1,6 @@
 # JPEG-like-Compression
 It's a jpeg compression algorithm, but it just includes the part of encode and decode, it cannot make a raw image into real form of jpeg image whose side name is .jpg.
+
 QF(Quality Factor) can decides the output quality of the image, if the value is higher, the performance is better.
 
 Limitation of input image:
