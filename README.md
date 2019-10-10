@@ -8,15 +8,14 @@ Limitation of input image:
 3. length：512，width：512
 
 Usage:
-
-1.Jpeg-like.cpp
-  * QF(Quality Factor) can only changed by the source code in line 38.
-  * filename can only modified manually in line 2830, 2966, 3044, 3344.
-  * filename in line 2966 and 3044 should be the same.
+ 1. Jpeg-like.cpp
+   * QF(Quality Factor) can only changed by the source code in line 38.
+   * filename can only modified manually in line 2830, 2966, 3044, 3344.
+   * filename in line 2966 and 3044 should be the same.
   
-2.PSNR.cpp
-  * filename in line 23 should be the same with line 3344 in Jpeg-like.cpp.
+ 2. PSNR.cpp
+   * filename in line 23 should be the same with line 3344 in Jpeg-like.cpp.
   
-3.Image should be in the same place with the main program.
+ 3. Image should be in the same place with the main program.
 
 PS: This method is brutal, so it may be slow.
